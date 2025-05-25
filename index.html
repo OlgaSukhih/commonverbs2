@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>История отношений – Полный код (Тёмная тема)</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #1e1e1e;
+      color: #ffffff;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .img-box {
+      position: relative;
+      width: 300px;
+      cursor: pointer;
+    }
+    .img-box img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      border: 2px solid #ffffff;
+      box-sizing: border-box;
+    }
+    .img-box:hover img {
+      transform: scale(1.02);
+    }
+    .caption {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Нажми на картинку, чтобы увидеть фразу</h1>
+  <div class="container">
+
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_0046_Девушка покупает книгу_remix_01jw1x83ygeynb5ak94fsnmet8.png" alt="Image" />
+      <div class="caption">Image 1</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1131_Стильная девушка звонит_remix_01jw3256nefkcrjr8cptzcmtec.png" alt="Image" />
+      <div class="caption">Image 2</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1142_Домашний уют девушки_remix_01jw32sv8dfk1r2yt7befxvzhn.png" alt="Image" />
+      <div class="caption">Image 3</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1146_Стильный танец_remix_01jw33039xe4jb4gghqqa7g6qb.png" alt="Image" />
+      <div class="caption">Image 4</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1150_Сочувствующая девушка и щенок_remix_01jw336vdpe4pv2vcah7241xx0 (1).png" alt="Image" />
+      <div class="caption">Image 5</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1152_Смотрит на картину_remix_01jw33bkh3e8xskkjfxjrz3kr2.png" alt="Image" />
+      <div class="caption">Image 6</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1154_Дарит подарок бабушке_remix_01jw33fc9pe0fbdnctys6yfkn0.png" alt="Image" />
+      <div class="caption">Image 7</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1156_Стильная девушка слышит шум_remix_01jw33k1rzes3rrd1ft6zmwz1y (1).png" alt="Image" />
+      <div class="caption">Image 8</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1158_Помощь на переходе_remix_01jw33q5nffdj8yrdtsa05yfay.png" alt="Image" />
+      <div class="caption">Image 9</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1205_Стильная девушка ищет_remix_01jw343jtsey5rskx294gfwqqn.png" alt="Image" />
+      <div class="caption">Image 10</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1213_Встреча подруг в кафе_remix_01jw34jdqhec9sf85ymr2tp7af.png" alt="Image" />
+      <div class="caption">Image 11</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1220_Стильная велосипедная прогулка_remix_01jw34z9w5f8pts1z9zn6874wb.png" alt="Image" />
+      <div class="caption">Image 12</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1226_Стильная девушка бежит_remix_01jw358sh1fzwva1gvmf21xjst.png" alt="Image" />
+      <div class="caption">Image 13</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1239_Девушка смотрит фильм_remix_01jw3623fneaqbf1rf17sgydf2.png" alt="Image" />
+      <div class="caption">Image 14</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1338_Стильная певица на сцене_remix_01jw39cp9ef8nb9hj8qjy2ww6t.png" alt="Image" />
+      <div class="caption">Image 15</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_1354_Стильный разговор подруг_remix_01jw3aa5srf3yamww8fprkd8jz.png" alt="Image" />
+      <div class="caption">Image 16</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_2122_Секреты стильной девушки_remix_01jw43z0hzfbmt0s7em7skbm27.png" alt="Image" />
+      <div class="caption">Image 17</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_2134_Стильная девушка за компьютером_remix_01jw44nhwgfdr8pm3p6651rkj3.png" alt="Image" />
+      <div class="caption">Image 18</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_2138_Ожидание автобуса_remix_01jw44wy04fdwr5dret7t571d4.png" alt="Image" />
+      <div class="caption">Image 19</div>
+    </div>
+    
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="20250525_2141_Стильная девушка идёт домой_remix_01jw452bh5fvr9ct5rw3ggcjhr.png" alt="Image" />
+      <div class="caption">Image 20</div>
+    </div>
+    
+  </div>
+  <script>
+    function toggleCaption(box) {
+      const caption = box.querySelector('.caption');
+      caption.style.display = caption.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
